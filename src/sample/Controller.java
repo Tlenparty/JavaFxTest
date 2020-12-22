@@ -66,13 +66,12 @@ public class Controller {
         String guess = numberInputField1.getText();
         numberInputField1.clear();
         int counter = 0;
-
             try {
                 randomNumberLabel1.setText(String.valueOf(Integer.parseInt(guess)));
                 counter++;
             } catch (NumberFormatException e) {
                 e.printStackTrace();
-                var alert = new Alert(Alert.AlertType.ERROR, "Введите число!");
+                var alert = new Alert(Alert.AlertType.ERROR, "Введите число от 0 до 3");
                 alert.setTitle("Ошибка ввода данных");
                 alert.show();
             }
