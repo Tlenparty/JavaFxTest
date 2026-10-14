@@ -1,16 +1,16 @@
 # JavaFX Random
 
-Небольшое окно на JavaFX (FXML + контроллер) с двумя мини-функциями:
+A small JavaFX window (FXML + controller) with two mini-features:
 
-- **Random!** — генерирует случайное число от 0 до введённого значения;
-  при нечисловом вводе показывает диалог с ошибкой.
-- **Guess** — игра «угадай число»: компьютер загадывает число от 0 до 2,
-  пользователь вводит вариант и видит результат.
+- **Random!** generates a random number from 0 up to the entered value;
+  on non-numeric input it shows an error dialog.
+- **Guess** is a number-guessing game: the computer picks a number from 0 to 2,
+  and the user enters a guess and sees the result.
 
-## Запуск
+## Run
 
-Требуется JDK 11+ и JavaFX SDK. Проще всего открыть проект в IntelliJ IDEA,
-подключить библиотеку JavaFX и запустить `sample.Main`, либо из консоли:
+Requires JDK 11+ and the JavaFX SDK. The easiest way is to open the project in IntelliJ IDEA,
+attach the JavaFX library and run `sample.Main`, or from the console:
 
 ```bash
 javac --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml -d out src/sample/*.java
